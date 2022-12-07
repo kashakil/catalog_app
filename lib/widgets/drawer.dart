@@ -5,7 +5,7 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imageUrl = 'images/login.png';
+    final imageUrl = 'assets/images/login.png';
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
