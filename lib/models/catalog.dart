@@ -1,14 +1,5 @@
 class CatalogModel {
-  static final items = [
-    Item(
-        id: 1,
-        name: 'iPhone 12 pro',
-        desc: 'Apple iPhone 12th generation',
-        price: 999,
-        color: '#33505a',
-        image:
-            'https://cdn.dxomark.com/wp-content/uploads/medias/post-61584/iphone-12-pro-max-graphite-hero.jpg'),
-  ];
+  static List<Item> items = <Item>[];
 }
 
 class Item {
