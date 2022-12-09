@@ -1,4 +1,5 @@
 import 'package:catalog_app/models/catalog.dart';
+import 'package:catalog_app/pages/home_widgets/catalor_header.dart';
 import 'package:catalog_app/widgets/drawer.dart';
 import 'package:catalog_app/widgets/item_widget.dart';
 import 'package:catalog_app/widgets/themes.dart';
@@ -51,28 +52,11 @@ class _HomePageState extends State<HomePage> {
               if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
                 CatalogList().expand()
               else
-                Center(
-                  child: CircularProgressIndicator(),
-                ),
+                CircularProgressIndicator().centered().expand(),
             ],
           ),
         ),
       ),
-    );
-  }
-}
-
-class CatalogHeader extends StatelessWidget {
-  const CatalogHeader({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        'Catalog App'.text.xl5.bold.color(MyTheme.darkBluishColor).make(),
-        'Trending Products'.text.xl2.make(),
-      ],
     );
   }
 }
